@@ -1,0 +1,95 @@
+/* ExploreMenu.css */
+
+.explore-menu {
+    padding: 50px 20px; /* Padding adjusted for top and bottom */
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
+  .explore-menu h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .explore-menu-text {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+  
+  .explore-menu-list-wrapper {
+    overflow: hidden; /* Hide overflow to prevent scrollbar from showing */
+    position: relative; /* Positioning context for scrollbar */
+  }
+  
+  .explore-menu-list {
+    display: flex;
+    gap: 17px;
+    padding-bottom: 20px; /* Space below for aesthetics */
+    position: relative; /* Ensure content is scrollable */
+    transform: translate3d(0, 0, 0); /* Ensure hardware acceleration for smoother scrolling */
+  }
+  
+  .explore-menu-list-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 auto; /* Prevent items from shrinking */
+    max-width: 300px;
+  }
+  
+  .explore-menu-list-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.3s ease; /* Smooth hover effect on image */
+  }
+  
+  .explore-menu-list-item p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin: 15px;
+  }
+  
+  .explore-menu-list-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .explore-menu-list-item:hover img {
+    transform: scale(1.05); /* Scale up image on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .explore-menu h1 {
+      font-size: 28px;
+    }
+  
+    .explore-menu-text {
+      font-size: 16px;
+    }
+  
+    .explore-menu-list-item {
+      max-width: 100%;
+    }
+  }
+
+  .explore-menu-list-item .active{
+    background-color: rgb(240, 120, 14);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    flex: 0 0 auto; /* Prevent items from shrinking */
+    max-width: 300px;
+  }
+  
